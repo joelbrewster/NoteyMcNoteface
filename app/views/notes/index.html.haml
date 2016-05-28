@@ -1,5 +1,8 @@
+
 - @notes.each do |note|
   %h2= link_to note.title, note
   %p= note.content
 
+  -# Stop this looping
+  %h2= link_to "New Note", new_note_path
 
