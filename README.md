@@ -1,10 +1,11 @@
-# Project2
-## NoteyMcNoteface.app
+# NoteyMcNoteface.app
 
 This is a note taking app that has user authentication and memes.
 Write stuff, add a picture, luls.
 
 ### Screen 1 - Main screen
+
+On page load, the user will see user quotes, a login button, heading and links in a footer to things used in this app.
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
 │┌─────────────────────────────────────────────────────────────────────┐│
@@ -42,6 +43,8 @@ Write stuff, add a picture, luls.
 └───────────────────────────────────────────────────────────────────────┘
 ```
 ### Screen 2 - Login screen
+
+modal login over the main content. Sucessful login takes the user to the note creation/edit/destruction page. Unsuccessful login just wastes time and asks the user to log in again. The user can close the modal to go back to the first page load window.
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
 │┌░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░┐│
@@ -80,6 +83,7 @@ Write stuff, add a picture, luls.
 ```
 
 ### Screen 3 - New/edit note screen
+Here the logged in user can create,edit, delete and add stuff to the 'notes'. The user can also log out.
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
 │┌─────────────────────────────────────────────────────────────────────┐│
@@ -125,6 +129,7 @@ Write stuff, add a picture, luls.
 - style your app with Bootstrap, Foundation, or some other CSS library
 - be deployed to the public (default: Heroku)
 - Include documentation of five user stories implemented by your app
+- what's the flow for logging in and logging out?
 
 ## Layout ideas
 http://materializecss.com/templates/parallax-template/preview.html
