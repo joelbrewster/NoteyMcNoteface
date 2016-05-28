@@ -1,4 +1,5 @@
 class NotesController < ApplicationController
+  before_action :find_note, only: [:show, :edit, :update, :destroy]
   def index
   end
 
@@ -30,6 +31,7 @@ class NotesController < ApplicationController
 
   private
   def find_note
+    @note = Note.find(params[:id])
   end
 
   def note_params
