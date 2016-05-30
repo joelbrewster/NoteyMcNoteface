@@ -63,6 +63,9 @@ GEM
       activesupport (>= 4.1.0)
     haml (4.0.7)
       tilt
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -84,6 +87,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.9.0)
     multi_json (1.12.1)
+    multi_xml (0.5.5)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
@@ -162,10 +166,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 4.1, >= 4.1.1)
   haml (~> 4.0, >= 4.0.7)
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   materialize-sass
