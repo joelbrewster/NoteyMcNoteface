@@ -1,4 +1,10 @@
 // @import "materialize";
+/*
+*= require_self
+*/
+@import 'notes.css.scss';
+@import 'welcome.css.scss';
+
 header {
   padding-left: 10px;
 }
