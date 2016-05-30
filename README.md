@@ -120,6 +120,9 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
+- Get devise working with user auth
+https://github.com/plataformatec/devise/wiki
+
 - Get authentication going with bcrypt
 https://gist.github.com/thebucknerlife/10090014
 
