@@ -3,7 +3,7 @@
   - @notes.each do |note|
     .header
     %h2= link_to note.title, note
-    %p= note.content
+    %p= simple_format(note.content)
 
   -# %h2= link_to "New Note", new_note_path
 
