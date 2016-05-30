@@ -9,3 +9,10 @@
   %p.notice= notice
   %p.alert= alert
   = yield
+  -if user_signed_in?
+    =link_to "New note", new_note_path
+    -# How to do this?
+    =link_to "Sign Out", new_note_path
+  -else
+    =link_to "Log in", new_user_session_path
+
