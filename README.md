@@ -130,6 +130,7 @@ https://gist.github.com/thebucknerlife/10090014
   - https://api.imgur.co://api.imgur.com
     - gem install imgurr
   - use HTTParty to get images from imgur or giphy
+  - http://www.rubygeocoder.com/
 
 - style your app with Bootstrap, Foundation, or some other CSS library
 
