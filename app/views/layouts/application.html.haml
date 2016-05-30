@@ -11,8 +11,7 @@
   = yield
   -if user_signed_in?
     =link_to "New note", new_note_path
-    -# How to do this?
-    =link_to "Sign Out", new_note_path
+    =link_to "Sign Out", destroy_user_session_path, method: :destroy
   -else
     =link_to "Log in", new_user_session_path
 
