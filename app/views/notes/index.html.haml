@@ -1,6 +1,7 @@
 
 - unless @notes.blank?
   - @notes.each do |note|
+    .header
     %h2= link_to note.title, note
     %p= note.content
 

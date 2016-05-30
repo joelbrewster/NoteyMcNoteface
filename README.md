@@ -120,6 +120,8 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
+- Get authentication going with bcrypt
+https://gist.github.com/thebucknerlife/10090014
 
 - Checkout:
   - https://api.imgur.co://api.imgur.com
@@ -127,13 +129,17 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
   - use HTTParty to get images from imgur or giphy
 
 - style your app with Bootstrap, Foundation, or some other CSS library
+
 - be deployed to the public (default: Heroku)
+
 - Include documentation of five user stories implemented by your app
-- what's the flow for logging in and logging out?
+
+- add random stickers idea
+http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops
+
 
 ## Layout ideas
 http://materializecss.com/templates/parallax-template/preview.html
-
 
 
 #### Ruberic
