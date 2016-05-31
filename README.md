@@ -1,4 +1,4 @@
-# NoteyMcNoteface.app
+j NoteyMcNoteface.app
 
 This is a note taking app that has user authentication and memes.
 Write stuff, add a picture, luls.
@@ -120,6 +120,9 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
+https://github.com/chrisyour/geo_location
+https://www.sitepoint.com/uploading-files-with-paperclip/
+
 - Get devise working with user auth
 https://github.com/plataformatec/devise/wiki
 
