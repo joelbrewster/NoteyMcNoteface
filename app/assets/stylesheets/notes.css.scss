@@ -1,6 +1,18 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.header {
+  text-align:center;
+}
+.button_links {
+  text-align:center;
+}
+
+.quote_align {
+  text-align:center;
+}
+
 .wrapper_new_logout {
   font-size: 2em;
   float: left;
@@ -31,4 +43,6 @@ h2 {
 
 button {
   font-size: 1.5em;
+  background: #65737D;
+  color: #343D46;
 }
