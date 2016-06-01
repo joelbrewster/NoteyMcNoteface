@@ -1,5 +1,9 @@
 = simple_form_for @note do |f|
   = f.input :title
+  %br
   = f.input :content
+  %br
   = f.button :submit
+  %br
 
+= link_to "All Notes", notes_path
