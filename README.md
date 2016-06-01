@@ -120,6 +120,12 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
+TODO:
+- no heading = no create note
+
+
+
+
 https://github.com/chrisyour/geo_location
 https://www.sitepoint.com/uploading-files-with-paperclip/
 
