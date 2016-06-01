@@ -3,21 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .header {
-  text-align:center;
 }
 .button_links {
-  text-align:center;
 }
 
 .quote_align {
-  text-align:center;
 }
 
 .wrapper_new_logout {
-  font-size: 2em;
-  float: left;
-  // position: relative;
-  // Put this at the top of the page
+  font-size: 1.7em;
+  display: inline-block;
+  position: relative;
 }
 
 body {
@@ -32,13 +28,17 @@ body {
 
 h1 {
   color: #90A1B2;
-  font-size: 2.5em;
+  font-size: 2.3em;
 }
 
 
 h2 {
   color: #90A1B2;
-  font-size: 2em;
+  font-size: 1.1em;
+}
+
+p {
+  font-size: .9em;
 }
 
 button {
@@ -49,8 +49,6 @@ button {
 
 .note {
   margin: 1rem 1%;
-  padding: 1.5rem 2.5%;
   float: left;
   border-radius: .4rem;
-  position: relative;
 }
