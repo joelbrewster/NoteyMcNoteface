@@ -1,6 +1,11 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$base: #343D46;
+$blue: #90A1B2;
+$green: #A4BD8E;
+$purple: #B38FAC;
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -33,10 +38,10 @@ body {
   font-family: Consolas, Lucida Console, monospace;
   background: #333C46;
   color: #DEE0E7;
-  a:link {color: #90A1B2; text-decoration: underline; }
-  a:active {color: #97B5B4; text-decoration: underline; }
-  a:visited {color: #A4BD8E; text-decoration: underline; }
-  a:hover {color: #B38FAC; text-decoration: underline; }
+  a:link {color: $blue; text-decoration: underline; }
+  a:active {color: $blue; text-decoration: underline; }
+  a:visited {color: $green; text-decoration: underline; }
+  a:hover {color: $purple; text-decoration: underline; }
 }
 
 h1 {
