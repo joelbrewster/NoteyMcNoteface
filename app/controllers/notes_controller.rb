@@ -4,6 +4,9 @@ class NotesController < ApplicationController
 
   def index
     @notes = Note.where(user_id: current_user)
+
+    ForecastIO.api_key = '7ffbe33d7d969fa82dfb9997652d22b3'
+    @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.summary
   end
 
   def show
