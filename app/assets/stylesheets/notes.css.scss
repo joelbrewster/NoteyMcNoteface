@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $base: #343D46;
+$base2: #65737D;
 $blue: #90A1B2;
 $green: #A4BD8E;
 $purple: #B38FAC;
@@ -20,12 +21,17 @@ button, .button {
     text-decoration: none;
   }
 }
-.header {
-}
-.button_links {
+
+.note_container {
+  // float: left;
+  display: center;
+  padding-left: 10%;
 }
 
-.quote_align {
+.note {
+  padding-left: 4%;
+  padding-right: 4%;
+  background: $base2;
 }
 
 .wrapper_new_logout {
