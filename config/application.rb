@@ -6,9 +6,9 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-Dot::Railtie.load
+# Dotenv::Railtie.load
 
-HOSTNAME = ENV['BirthdayBook-Pro.local']
+# HOSTNAME = ENV['BirthdayBook-Pro.local']
 
 module Project2
   class Application < Rails::Application
