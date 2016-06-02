@@ -6,7 +6,12 @@ class NotesController < ApplicationController
     @notes = Note.where(user_id: current_user)
 
     ForecastIO.api_key = '7ffbe33d7d969fa82dfb9997652d22b3'
-    @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.summary
+    latitude = -37.8175
+    longitude = 144.9671
+    # weather_at_time = note.created_at
+    @forecast = ForecastIO.forecast(latitude, longitude).hourly.icon
+    # @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.icon
+
   end
 
   def show
