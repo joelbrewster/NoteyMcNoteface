@@ -5,11 +5,12 @@ class NotesController < ApplicationController
   def index
     @notes = Note.where(user_id: current_user)
 
-    ForecastIO.api_key = '7ffbe33d7d969fa82dfb9997652d22b3'
+    ForecastIO.api_key = ENV['PRIVATE_KEY']
+    # ForecastIO.api_key = "8ccec5f41883537fade125a99fa14f89"
     latitude = -37.8175
     longitude = 144.9671
     # weather_at_time = note.created_at
-    @forecast = ForecastIO.forecast(latitude, longitude).hourly.icon
+    @forecast = ForecastIO.forecast(latitude, longitude).currently.icon
     # @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.icon
 
   end
