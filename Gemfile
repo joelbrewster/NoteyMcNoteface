@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'dotenv-rails', :groups => [:development, :test]
 # Weather
 gem 'forecast_io'
 # Does this even look good?
