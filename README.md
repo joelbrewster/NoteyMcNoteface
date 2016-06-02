@@ -121,9 +121,6 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 ## Things to do
 TODO:
-- Fix up the spacing
-  - no heading = no create note
-
 - Get a longitude and latitude from ip
 
 - Get the weather from the latitude and longitude
