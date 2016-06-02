@@ -7,6 +7,9 @@ class NotesController < ApplicationController
 
     ForecastIO.api_key = ENV['PRIVATE_KEY']
     # ForecastIO.api_key = "8ccec5f41883537fade125a99fa14f89"
+    # http://ipinfo.io/
+    # http://ipinfo.io/loc
+
     latitude = -37.8175
     longitude = 144.9671
     # weather_at_time = note.created_at
