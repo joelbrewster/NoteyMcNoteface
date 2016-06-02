@@ -5,4 +5,4 @@
         %h2= link_to note.title, note
         %p= simple_format(note.content)
         %p.date= time_ago_in_words(note.created_at)
-        %p= @forecast.inspect
+        %p= @forecast
