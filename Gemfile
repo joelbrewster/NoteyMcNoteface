@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Weather
-gem 'yahoo_weather'
+gem 'forecast_io'
 # Does this even look good?
 gem 'materialize-sass'
 gem 'rails', '4.2.6'
