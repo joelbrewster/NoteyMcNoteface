@@ -54,6 +54,7 @@ $purple: #B38FAC;
   display: flex;
   flexwebkit-flex-direction: row;
   padding: 10px 20px;
+  text-align: vertical;
 }
 
 .wrapper_left {
@@ -91,20 +92,20 @@ $purple: #B38FAC;
 body {
   color: $base3;
   font-family: Consolas, Lucida Console, monospace;
-  a:link {color: $blue; text-decoration: underline; }
+  a:link {color: $blue; text-decoration: none; }
   a:active {color: $blue; text-decoration: underline; }
-  a:visited {color: $green; text-decoration: underline; }
-  a:hover {color: $purple; text-decoration: underline; }
+  a:visited {color: $base3; text-decoration: none; }
+  a:hover {color: $green; text-decoration: none; }
   background: $base0;
 }
 
 h1 {
-  color: $green;
+  color: $base3;
 }
 
 
 h2 {
-  color: $green;
+  color: $base3;
 }
 
 p {
