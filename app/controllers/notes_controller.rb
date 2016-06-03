@@ -13,7 +13,7 @@ class NotesController < ApplicationController
 
     latitude = -37.8175
     longitude = 144.9671
-    # weather_at_time = note.created_at
+
     @forecast = ForecastIO.forecast(latitude, longitude).currently.icon
     # @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.icon
 

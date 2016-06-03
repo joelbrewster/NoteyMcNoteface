@@ -19,6 +19,8 @@
               %i.fa.fa-plus-square-o.fa-1x
               New Note
 
+          -# .weather
+          -#   %p= @forecast
           .wrapper_right
             =link_to "Log out", destroy_user_session_path, :method => :delete
             %i.fa.fa-sign-out.fa-1x
