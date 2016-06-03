@@ -2,52 +2,72 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$base: #343D46;
+$base0: #4F5B66;
+$base1: #343D46;
 $base2: #65737D;
+$base3: #DEE0E7;
 $blue: #90A1B2;
 $green: #A4BD8E;
 $purple: #B38FAC;
 * {
   -webkit-font-smoothing: antialiased;
-}
-
-button, .button {
-  border: none;
-  outline: none;
-  padding: 1rem 3.5rem;
-  border-radius: 2rem;
-  a {
-    color: white;
-    text-decoration: none;
-  }
+  letter-spacing: 1px;
 }
 
 .note_container {
-  // float: left;
-  display: center;
-  padding-left: 10%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .note {
-  padding-left: 4%;
-  padding-right: 4%;
-  background: $base2;
+  border: 1px solid $base2;
+  flex-grow: 1;
+  min-width: 15%;
+  justify-content: center;
+  // align-items: center;
+  text-align: center;
+  margin: 5px;
+
+  background: #333C46;
+}
+
+.date {
+  color: $base1;
+  font-size: .8em;
 }
 
 .wrapper_new_logout {
-  font-size: 1.7em;
-  display: inline-block;
-  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row
+}
+
+.wrapper_left {
+  -webkit-flex: 1 0;
+  flex: 1 0;
+}
+
+.wrapper_right {
+  -webkit-flex: 0 1;
+  flex: 0 1;
 }
 
 body {
+  color: $base3;
   font-family: Consolas, Lucida Console, monospace;
-  background: #333C46;
-  color: #DEE0E7;
   a:link {color: $blue; text-decoration: underline; }
   a:active {color: $blue; text-decoration: underline; }
   a:visited {color: $green; text-decoration: underline; }
   a:hover {color: $purple; text-decoration: underline; }
+  background: $base0;
 }
 
 h1 {
@@ -65,19 +85,6 @@ p {
   font-size: .9em;
 }
 
-button {
-  font-size: 1.5em;
-  background: #65737D;
-  color: #343D46;
-  margin: 2rem 0;
-}
-
-.note {
-  margin: 1rem 1%;
-  float: left;
-  border-radius: .4rem;
-}
-
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   margin-bottom: 1rem;
@@ -91,3 +98,19 @@ input[type="text"], input[type="email"], input[type="password"] {
 textarea {
   min-height: 200px;
 }
+
+button, .button {
+  border: none;
+  outline: none;
+  padding: 1rem 3.5rem;
+  border-radius: 2rem;
+  font-size: 1.5em;
+  background: #65737D;
+  color: #343D46;
+  margin: 2rem 0;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+

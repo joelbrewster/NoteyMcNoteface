@@ -1,17 +1,19 @@
 !!!
 %html
   %head
-    %title Project 2
+    %title Notey McNoteface
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 %body
-  -if user_signed_in?
-  %header
-    .wrapper_new_logout
-      =link_to "New Note", new_note_path
-      =link_to "Log out", destroy_user_session_path, :method => :delete
-        %br/
+  .header
+    %header
+      -if user_signed_in?
+        .wrapper_new_logout
+          .wrapper_left
+            =link_to "New Note", new_note_path
+          .wrapper_right
+            =link_to "Log out", destroy_user_session_path, :method => :delete
   = yield
   %p.notice= notice
   %p.alert= alert
