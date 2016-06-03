@@ -121,6 +121,7 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 ## Things to do
 TODO:
+- get note to href on square not just title
 - Get a longitude and latitude from ip
 
 - Get the weather from the latitude and longitude
