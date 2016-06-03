@@ -87,10 +87,19 @@ $purple: #B38FAC;
 }
 
 .wrapper_note_tools {
+  display: -webkit-flex;
+  display: flex;
   padding: 10px 5px;
   background: $base1;
   border: 1px solid $base2;
+}
 
+.wrapper_edit{
+  padding: 0 10px;
+
+}
+.wrapper_delete{
+  padding: 0 10px;
 }
 
 body {
@@ -113,6 +122,10 @@ h2 {
 }
 
 p {
+}
+.quotes {
+  font-size: .7em;
+  text-align: center;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
