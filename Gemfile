@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'font-awesome-sass', '~> 4.6.2'
 gem 'dotenv-rails', :groups => [:development, :test]
 # Weather
 gem 'forecast_io'
