@@ -1,9 +1,14 @@
 .wrapper_show
-  .title_wrapper
+  .wrapper.title
     %h1= simple_format(@note.title)
-  .header_wrapper
+  .wrapper_title
     %p= simple_format(@note.content)
 
-= link_to "All Notes", notes_path
-= link_to "Edit Notes", edit_note_path(@note)
-= link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure you want to delete?" }
+  .wrapper_note_tools
+    -# = link_to "All Notes", notes_path
+    -# %i.fa.fa-file-text-o
+    = link_to "Edit Notes", edit_note_path(@note)
+    %i.fa.fa-pencil-square-o
+    = link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Are you sure you want to delete?" }
+    %i.fa.fa-trash-o
+
