@@ -11,9 +11,16 @@
       -if user_signed_in?
         .wrapper_new_logout
           .wrapper_left
+
+            %i.fa.fa-file-text-o.fa-1x
+            = link_to "All Notes", notes_path
+
+            %i.fa.fa-plus-square-o.fa-1x
             =link_to "New Note", new_note_path
+
           .wrapper_right
             =link_to "Log out", destroy_user_session_path, :method => :delete
+            %i.fa.fa-sign-out.fa-1x
   = yield
   %p.notice= notice
   %p.alert= alert
