@@ -6,6 +6,7 @@ $base0: #4F5B66;
 $base1: #343D46;
 $base2: #65737D;
 $base3: #DEE0E7;
+$base4: #A7ADB9;
 $blue: #90A1B2;
 $green: #A4BD8E;
 $purple: #B38FAC;
@@ -28,15 +29,14 @@ $purple: #B38FAC;
 }
 
 .note {
+  background: #333C46;
   border: 1px solid $base2;
   flex-grow: 1;
   min-width: 15%;
   justify-content: center;
-  // align-items: center;
   text-align: center;
   margin: 5px;
-
-  background: #333C46;
+  padding: 0 2%;
 }
 
 .date {
@@ -44,20 +44,41 @@ $purple: #B38FAC;
   font-size: .8em;
 }
 
+.header {
+  background: $base1;
+  border: 1px solid $base2;
+}
+
 .wrapper_new_logout {
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row
+  flexwebkit-flex-direction: row;
+  padding: 10px 20px;
 }
 
 .wrapper_left {
-  -webkit-flex: 1 0;
-  flex: 1 0;
+  font-size: 2em;
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
 }
 
 .wrapper_right {
-  -webkit-flex: 0 1;
-  flex: 0 1;
+  font-size: 2em;
+  -webkit-flex: 0 0 1;
+  flex: 0 0 1;
+}
+
+
+.wrapper_show {
+
+}
+
+.title_wrapper {
+
+}
+
+.header_wrapper {
+
 }
 
 body {
