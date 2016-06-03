@@ -3,16 +3,9 @@
 *= require_self
 */
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 @import 'normalize.css.scss';
 @import 'notes.css.scss';
 @import 'welcome.css.scss';
-
-header {
-  padding-left: 10px;
-}
-h2 {
-}
-
-
-
