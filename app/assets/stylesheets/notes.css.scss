@@ -57,27 +57,34 @@ $purple: #B38FAC;
 }
 
 .wrapper_left {
-  font-size: 2em;
+  font-size: 1.5em;
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
 }
 
 .wrapper_right {
-  font-size: 2em;
+  font-size: 1.5em;
   -webkit-flex: 0 0 1;
   flex: 0 0 1;
 }
 
 
 .wrapper_show {
+  padding: 10px;
 
 }
 
-.title_wrapper {
+.wrapper_title {
+}
+
+.wrapper_header {
 
 }
 
-.header_wrapper {
+.wrapper_note_tools {
+  padding: 10px 5px;
+  background: $base1;
+  border: 1px solid $base2;
 
 }
 
@@ -92,18 +99,15 @@ body {
 }
 
 h1 {
-  color: #90A1B2;
-  font-size: 2.3em;
+  color: $green;
 }
 
 
 h2 {
-  color: #90A1B2;
-  font-size: 1.1em;
+  color: $green;
 }
 
 p {
-  font-size: .9em;
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
