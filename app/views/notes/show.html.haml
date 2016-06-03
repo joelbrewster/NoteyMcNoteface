@@ -1,5 +1,8 @@
-%h1= simple_format(@note.title)
-%p= simple_format(@note.content)
+.wrapper_show
+  .title_wrapper
+    %h1= simple_format(@note.title)
+  .header_wrapper
+    %p= simple_format(@note.content)
 
 = link_to "All Notes", notes_path
 = link_to "Edit Notes", edit_note_path(@note)
