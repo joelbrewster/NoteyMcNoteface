@@ -47,6 +47,15 @@ $purple: #B38FAC;
   // text-align: center;
   margin: 5px;
   padding: 0 2%;
+  -moz-box-shadow: 4px 4px 24px 4px #4F5B66;
+  -webkit-box-shadow: 4px 4px 24px 4px #4F5B66;
+  box-shadow: 4px 4px 24px 4px #4F5B66;
+}
+
+.note:hover {
+  -moz-box-shadow: 4px 4px 24px 4px #343D46;
+  -webkit-box-shadow: 4px 4px 24px 4px #343D46;
+  box-shadow: 4px 4px 24px 4px #343D46;
 }
 
 .weather {
@@ -67,6 +76,7 @@ $purple: #B38FAC;
   display: -webkit-flex;
   display: flex;
   flex-grow: 1;
+  padding: 1%;
 }
 
 .wrapper_title{
@@ -170,10 +180,10 @@ textarea {
 }
 
 .button_links {
- display: -webkit-flex;
- display: flex;
- -webkit-flex-direction: row;
- flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 .button_child {
   text-align: center;
