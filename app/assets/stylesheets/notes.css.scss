@@ -73,17 +73,15 @@ $purple: #B38FAC;
   flex: 0 0 1;
 }
 
-
 .wrapper_show {
   padding: 10px;
-
+  text-align: center;
 }
 
 .wrapper_title {
 }
 
 .wrapper_header {
-
 }
 
 .wrapper_note_tools {
@@ -104,7 +102,8 @@ $purple: #B38FAC;
 
 body {
   color: $base3;
-  font-family: Consolas, Lucida Console, monospace;
+  // font-family: Consolas, Lucida Console, monospace;
+  font: 14px/22px normal helvetica, sans-serif;
   a:link {color: $blue; text-decoration: none; }
   a:active {color: $blue; text-decoration: underline; }
   a:visited {color: $base3; text-decoration: none; }
@@ -125,6 +124,13 @@ p {
 }
 .quotes {
   font-size: .7em;
+  text-align: center;
+  font: 14px/22px normal helvetica, sans-serif;
+  padding: 0 20%;
+}
+
+.wrapper_new_note {
+  padding: 0 2%;
   text-align: center;
 }
 
