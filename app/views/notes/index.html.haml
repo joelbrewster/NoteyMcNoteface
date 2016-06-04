@@ -3,7 +3,7 @@
     - @notes.each do |note|
       %a{ href: (url_for [note])}
         .note
-          %h2= link_to note.title, note
+          %p.title= note.title
           %p= simple_format(note.content)
           .date
             %p.date= time_tag(note.created_at)
