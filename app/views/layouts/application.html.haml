@@ -22,8 +22,14 @@
           -# .weather
           -#   %p= @forecast
           .wrapper_right
-            =link_to "Log out", destroy_user_session_path, :method => :delete
-            %i.fa.fa-sign-out.fa-1x
+            = link_to destroy_user_session_path, :method => :delete do
+              %i.fa.fa-sign-out.fa-1x
+              Log Out
+
+          -# .wrapper_right
+          -#   =link_to "Log out", destroy_user_session_path, :method => :delete
+          -#   %i.fa.fa-sign-out.fa-1x
+
   = yield
   %p.notice= notice
   %p.alert= alert
