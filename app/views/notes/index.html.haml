@@ -2,13 +2,15 @@
   - unless @notes.blank?
     - @notes.each do |note|
       %a{ href: (url_for [note])}
-      .note
-        %h2= link_to note.title, note
-        %p= simple_format(note.content)
-        .date
-          %p.date= time_tag(note.created_at)
+        .note
+          %h2= link_to note.title, note
+          %p= simple_format(note.content)
+          .date
+            %p.date= time_tag(note.created_at)
   - else
     .wrapper_show
-      %p Create a new note by clicking "New Note".
-.quotes
-  %p quotes go here
+      %h2 Create a new note by clicking "New Note".
+      .quotes
+        %br
+        - for i in 0..2
+          = @quote[i]['content'].html_safe
