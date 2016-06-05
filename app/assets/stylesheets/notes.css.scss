@@ -11,97 +11,106 @@ $note: #F7F7F7;
 $button2: #555555;
 
 * {
-    text-align: center;
+  text-align: center;
+  background: inherit;
 }
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 body {
-    // font-family: Consolas, Lucida Console, monospace;
-    font-family: 'Roboto', sans-serif;
-    // a:link {  color: black; text-decoration: none; }
-    // a:active {  color: black; text-decoration: underline; }
-    // a:visited { color: black; text-decoration: none; }
-    // a:hover { text-decoration: none; }
+  // font-family: Consolas, Lucida Console, monospace;
+  font-family: 'Roboto', sans-serif;
+  // a:link {  color: black; text-decoration: none; }
+  // a:active {  color: black; text-decoration: underline; }
+  // a:visited { color: black; text-decoration: none; }
+  // a:hover { text-decoration: none; }
 }
 
 // Link the top $highlight color together
 .heading {
-    min-height: 100px;
-    border: 1px solid $border;
-    background: $highlight;
-    padding-top: 5%;
-    h2 {
-      color: white;
-    }
-    h1 {
-      color: white;
-    }
-    p {
-      color: $border;
-    }
+  min-height: 100px;
+  border: 1px solid $border;
+  background: $highlight;
+  padding-top: 5%;
+  h2 {
+    color: white;
+  }
+  h1 {
+    color: white;
+  }
+  p {
+    color: $border;
+  }
 }
 
 .wrapper_titlebar {
-    display: -webkit-flex;
-    display: flex;
-    flex-grow: 1;
-    color: white;
+  display: -webkit-flex;
+  display: flex;
+  flex-grow: 1;
+  color: white;
 }
 
 .wrapper_child {
-    flex-grow: 1;
-    font-size: 1.2em;
+  flex-grow: 1;
+  font-size: 1.2em;
 }
 
 //Notes
 
 .note_container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    justify-content: flex-center;
-    align-content: flex-center;
-    align-items: flex-center;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-center;
+  align-content: flex-center;
+  align-items: flex-center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .note {
-    // TODO: Need to add a clear fix things - some notes spill over the side
-    background: $note;
-    border: 1px solid $border;
-    flex-grow: 1;
-    min-width: 15%;
-    // justify-content: center;
-    // text-align: center;
-    margin: 5px;
-    padding: 2% 8%;
+  // TODO: Need to add a clear fix things - some notes spill over the side
+  background: $note;
+  border: 1px solid $border;
+  flex-grow: 1;
+  min-width: 15%;
+  // justify-content: center;
+  // text-align: center;
+  margin: 5px;
+  padding: 2% 8%;
+}
+
+.note:hover {
+  color: $button1;
 }
 
 .title {
-    font-size: 1.2em;
-    font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.title:hover {
+  color: $highlight;
 }
 
 .date {
-    font-size: .8em;
-    color: $button2;
+  font-size: .8em;
+  color: $button2;
 }
 
 .wrapper_show {
-    background: $note;
-    border: 1px solid $border;
-    flex-grow: 1;
-    min-width: 15%;
-    margin: 5px;
-    padding: 2% 8%;
-    display: block;;
+  background: $note;
+  border: 1px solid $border;
+  flex-grow: 1;
+  min-width: 15%;
+  margin: 5px;
+  padding: 2% 8%;
+  display: block;;
 }
 
 .wrapper_child a:hover {
@@ -165,10 +174,10 @@ button {
 }
 
 .button_links {
- display: -webkit-flex;
- display: flex;
- -webkit-flex-direction: row;
- flex-direction: row;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
 }
 
 .button_child {
@@ -235,4 +244,15 @@ textarea {
 
 .tool:hover {
   color: $button1;
+}
+
+.footer_wrapper {
+  padding-bottom: 20px;
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:20px;
 }
