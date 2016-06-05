@@ -1,10 +1,12 @@
-= simple_form_for @note do |f|
-  .text
-    = f.input :title, :min => 1
-  .text2
-    = f.input :content
-  .button
-    = f.button :submit
-  %br
-
--# = link_to "All Notes", notes_path
+.wrapper_show
+  = simple_form_for @note do |f|
+    .text
+      = f.input :title, :min => 1
+    %br
+    .text2
+      = f.input :content
+    %br
+    .button
+      = f.button :submit
+    %br
+      -# = link_to "All Notes", notes_path
