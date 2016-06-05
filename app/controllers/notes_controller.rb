@@ -6,15 +6,15 @@ class NotesController < ApplicationController
 
     @notes = Note.where(user_id: current_user)
 
-    ForecastIO.api_key = ENV['PRIVATE_KEY']
+    # ForecastIO.api_key = ENV['PRIVATE_KEY']
     # ForecastIO.api_key = "8ccec5f41883537fade125a99fa14f89"
     # http://ipinfo.io/
     # http://ipinfo.io/loc
 
-    latitude = -37.8175
-    longitude = 144.9671
+    # latitude = -37.8175
+    # longitude = 144.9671
 
-    @forecast = ForecastIO.forecast(latitude, longitude).currently.icon
+    # @forecast = ForecastIO.forecast(latitude, longitude).currently.icon
     # @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.icon
     quotes = HTTParty.get('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10')
     @quote = quotes
