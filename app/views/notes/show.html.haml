@@ -5,12 +5,16 @@
     %p= simple_format(@note.content)
 
   %br
-  = link_to notes_path do
-    %i.fa.fa-file-text-o
-    Show All
-  = link_to edit_note_path(@note) do
-    %i.fa.fa-pencil-square-o
-    Edit Note
-  = link_to note_path(@note), method: :delete, data: { confirm: "Are you sure you want to delete?" } do
-    %i.fa.fa-trash-o
-    Delete
+  .wrapper_tool
+    .tool
+      = link_to notes_path do
+        %i.fa.fa-file-text-o
+        Show All
+    .tool
+      = link_to edit_note_path(@note) do
+        %i.fa.fa-pencil-square-o
+        Edit Note
+    .tool
+      = link_to note_path(@note), method: :delete, data: { confirm: "Are you sure you want to delete?" } do
+        %i.fa.fa-trash-o
+        Delete
