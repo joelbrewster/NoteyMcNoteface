@@ -44,7 +44,6 @@ body {
     }
 }
 
-
 .wrapper_titlebar {
     display: -webkit-flex;
     display: flex;
@@ -74,6 +73,7 @@ body {
 }
 
 .note {
+    // TODO: Need to add a clear fix things - some notes spill over the side
     background: $note;
     border: 1px solid $border;
     flex-grow: 1;
@@ -132,6 +132,11 @@ body {
   }
 }
 
+.httparty_quotes {
+  color: $button2;
+  font-style: italic;
+}
+
 //Buttons
 
 button {
@@ -177,6 +182,9 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   border: 1px solid $border;
   border-radius: .4rem;
 }
+
+// TODO: Fix width on signup text boxes
+
 
 input[type="text"], input[type="email"], input[type="password"] {
   height: 40px;
