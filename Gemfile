@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 gem 'font-awesome-sass', '~> 4.6.2'
 gem 'dotenv-rails', :groups => [:development, :test]
 # Weather
-gem 'forecast_io'
+# gem 'forecast_io'
 # Does this even look good?
-gem 'materialize-sass'
+# gem 'materialize-sass'
 gem 'rails', '4.2.6'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -39,5 +39,3 @@ end
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'devise', '~> 4.1', '>= 4.1.1'
-
-
