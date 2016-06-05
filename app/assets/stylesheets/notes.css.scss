@@ -201,6 +201,9 @@ button {
   color: $button1;
 }
 
+button:hover{
+  background: $button2;
+}
 
 //Text Area
 input[type="text"], input[type="email"], input[type="password"], textarea {
