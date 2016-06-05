@@ -6,7 +6,7 @@
           %p.title= note.title
           %p= simple_format(note.content)
           .date
-            %p.date= time_tag(note.created_at)
+            %p.date= time_tag(note.updated_at)
   - else
     .wrapper_show
       %h2 Create a new note by clicking "New Note".
