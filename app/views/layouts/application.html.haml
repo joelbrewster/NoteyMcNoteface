@@ -9,21 +9,21 @@
   .header
     %header
       -if user_signed_in?
-        .wrapper_titlebar
+        .wrapper_titlebar.heading
           .wrapper_child
             = link_to notes_path do
               %i.fa.fa-file-text-o.fa-1x
-              Notes
+                Notes
           .wrapper_child
             = link_to new_note_path do
               %i.fa.fa-plus-square-o.fa-1x
-              New Note
+                New Note
           -# .weather
           -#   %p= @forecast
           .wrapper_child
             = link_to destroy_user_session_path, :method => :delete do
               %i.fa.fa-sign-out.fa-1x
-              Log Out
+                Log Out
 
           -# .wrapper_right
           -#   =link_to "Log out", destroy_user_session_path, :method => :delete
@@ -32,4 +32,3 @@
   = yield
   %p.notice= notice
   %p.alert= alert
-
