@@ -1,6 +1,7 @@
 // Place all the styles related to the Notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 $highlight: #00CDCF;
 $button1: #009A9C;
@@ -10,69 +11,183 @@ $note: #F7F7F7;
 $button2: #555555;
 
 * {
-  text-align: center;
+    text-align: center;
 }
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 body {
-  font-family: Consolas, Lucida Console, monospace;
-  // a:link {  color: black; text-decoration: none; }
-  // a:active {  color: black; text-decoration: underline; }
-  // a:visited { color: black; text-decoration: none; }
-  // a:hover { text-decoration: none; }
+    // font-family: Consolas, Lucida Console, monospace;
+    font-family: 'Roboto', sans-serif;
+    // a:link {  color: black; text-decoration: none; }
+    // a:active {  color: black; text-decoration: underline; }
+    // a:visited { color: black; text-decoration: none; }
+    // a:hover { text-decoration: none; }
 }
 
-// Link the blue top together
+// Link the top $highlight color together
 .heading {
-  min-height: 100px;
-  border: 1px solid $border;
-  background: $highlight;
-  padding-top: 5%;
+    min-height: 100px;
+    border: 1px solid $border;
+    background: $highlight;
+    padding-top: 5%;
+    h2 {
+      color: white;
+    }
+    h1 {
+      color: white;
+    }
+    p {
+      color: $border;
+    }
 }
 
 
 .wrapper_titlebar {
-  display: -webkit-flex;
-  display: flex;
-  flex-grow: 1;
-  color: white;
+    display: -webkit-flex;
+    display: flex;
+    flex-grow: 1;
+    color: white;
 }
 
 .wrapper_child {
-  flex-grow: 1;
-  font-size: 1.2em;
+    flex-grow: 1;
+    font-size: 1.2em;
 }
 
-// .padding_left {
-//   padding-left: 10px;
-// }
+//Notes
 
-// .note_container {
-//   display: -webkit-box;
-//   display: -moz-box;
-//   display: -ms-flexbox;
-//   display: -webkit-flex;
-//   display: flex;
-//   justify-content: flex-center;
-//   align-content: flex-center;
-//   align-items: flex-center;
-//   flex-wrap: wrap;
-//   flex-grow: 1;
-// }
+.note_container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-center;
+    align-content: flex-center;
+    align-items: flex-center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+}
 
-// .note {
-//   // border: 1px solid $base2;
-//   flex-grow: 1;
-//   min-width: 15%;
-//   // justify-content: center;
-//   // text-align: center;
-//   margin: 5px;
-//   padding: 0 2%;
-//   border: 1px solid $border;
-//   background: $note;
-// }
+.note {
+    background: $note;
+    border: 1px solid $border;
+    flex-grow: 1;
+    min-width: 15%;
+    // justify-content: center;
+    // text-align: center;
+    margin: 5px;
+    padding: 2% 8%;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.date {
+    font-size: .8em;
+    color: $button2;
+}
+
+.wrapper_show {
+    background: $note;
+    border: 1px solid $border;
+    flex-grow: 1;
+    min-width: 15%;
+    margin: 5px;
+    padding: 2% 8%;
+    display: block;;
+}
+
+
+//Quotes
+
+.quote_align {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.quote {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  min-width: 15%;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  padding: 0 3%;
+  p {
+    padding: 0 10px;
+    margin: 10px;
+  }
+}
+
+//Buttons
+
+button {
+  background: $button1;
+  // TODO go to $button2 on hover
+  border: $border;
+  outline: none;
+  padding: 1rem 3.5rem;
+  color: white;
+  margin: 2rem 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.button_links {
+ display: -webkit-flex;
+ display: flex;
+ -webkit-flex-direction: row;
+ flex-direction: row;
+}
+
+.button_child {
+  text-align: center;
+  min-width: 50%;
+}
+
+.button {
+  //TODO: Get the button on the edit page like the front page but $button2
+  background: $button2;
+  border: $border;
+  outline: none;
+  padding: 1rem 3.5rem;
+  color: white;
+  margin: 2rem 0;
+}
+
+
+//Text Area
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid $border;
+  border-radius: .4rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  height: 40px;
+}
+
+textarea {
+  min-height: 200px;
+}
+
+
+
 
 // .note:hover {
 //   // flex-grow: 1;
@@ -87,11 +202,11 @@ body {
 //   // border: 1px solid #65737D;
 // }
 
-// .date {
-//   font-size: .8em;
-//   color: $button2;
-// }
 
+
+// .padding_left {
+//   padding-left: 10px;
+// }
 
 
 // .header {
@@ -118,13 +233,6 @@ body {
 // }
 
 
-// // TODO: Need to space these out more
-// .wrapper_note_tools {
-//   display: -webkit-flex;
-//   display: flex;
-//   padding: 10px 5px;
-//   // border: 1px solid $base2;
-// }
 
 // .wrapper_edit{
 //   padding: 0 10px;
@@ -145,26 +253,6 @@ body {
 // }
 
 
-// .quote_align {
-//   display:flex;
-//   flex-direction: row;
-//   flex-wrap: nowrap;
-//   justify-content: flex-start;
-//   align-content: flex-start;
-//   align-items: flex-start;
-// }
-
-// .quote {
-//   display: -webkit-flex;
-//   display: flex;
-//   -webkit-flex-direction: row;
-//   flex-direction: row;
-//   min-width: 15%;
-//   justify-content: center;
-//   text-align: center;
-//   margin: 5px;
-//   padding: 0 3%;
-// }
 
 // .wrapper_new_note {
 //   padding: 0 2%;
@@ -187,31 +275,7 @@ body {
 // textarea {
 // }
 
-// .button_links {
-//  display: -webkit-flex;
-//  display: flex;
-//  -webkit-flex-direction: row;
-//  flex-direction: row;
-// }
-// .button_child {
-//   text-align: center;
-//   min-width: 50%;
-//   // margin-left: 10px;
-//   // margin-right: 10px;
-// }
 
-// button {
-//   border: none;
-//   outline: none;
-//   padding: 1rem 3.5rem;
-//   color: white;
-//   // border-radius: 2rem;
-//   // font-size: 1.5em;
-//   margin: 2rem 0;
-//   a {
-//     text-decoration: none;
-//   }
-// }
 
 // .wrapper_footer {
 //   display: -webkit-flex;
