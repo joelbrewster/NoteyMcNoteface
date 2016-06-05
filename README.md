@@ -120,48 +120,16 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
-TODO:
-- add shadow on note mouseover
+TODO: fix up log in and sign in href for button and not just text
 
+TODO: add shadow on note mouseover
+TODO: login, fix whitespace up top
+TODO: mouse effects (darken and back to lighten) for all buttons and tools
+TODO: Notes/new - fix the button to match others but darker
+TODO: Space out the Show/Edit/Delete tools on the note page
+TODO: increase size of blue toolbar items (Notes/ New Notes/ Log out)
+TODO: resize the main blue tool menu to be consistent
 
-
-
-- Get a longitude and latitude from ip
-
-- Get the weather from the latitude and longitude
-
-- get the weather in the note write
-  - https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%201103816&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys
-
-
-
-https://github.com/chrisyour/geo_location
-https://www.sitepoint.com/uploading-files-with-paperclip/
-
-- Get devise working with user auth
-https://github.com/plataformatec/devise/wiki
-
-- Get authentication going with bcrypt
-https://gist.github.com/thebucknerlife/10090014
-
-- Checkout:
-  - https://api.imgur.co://api.imgur.com
-    - gem install imgurr
-  - use HTTParty to get images from imgur or giphy
-  - http://www.rubygeocoder.com/
-
-- style your app with Bootstrap, Foundation, or some other CSS library
-
-- be deployed to the public (default: Heroku)
-
-- Include documentation of five user stories implemented by your app
-
-- add random stickers idea
-http://api.giphy.com/v1/stickers/random?api_key=dc6zaTOxFJmzC&tag=oops
-
-
-## Layout ideas
-http://materializecss.com/templates/parallax-template/preview.html
 
 
 #### Ruberic
@@ -172,4 +140,3 @@ Your app must:
 * Properly manage packages using gems
 * Have semantically clean HTML and CSS
 * Be deployed to the public (default: Heroku)
-
