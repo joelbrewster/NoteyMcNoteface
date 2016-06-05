@@ -2,23 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$base0: #4F5B66;
-$base1: #343D46;
-$base2: #65737D;
-$base3: #DEE0E7;
-$base4: #A7ADB9;
-$blue: #90A1B2;
-$green: #A4BD8E;
-$purple: #B38FAC;
+$highlight: #00CDCF;
+$button1: #009A9C;
+
+$border: #E3E3E3;
+$note: #F7F7F7;
+$button2: #555555;
+
+
 
 * {
-  -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
   justify-content: center;
   text-align: center;
 }
 
+body {
+  font-family: Consolas, Lucida Console, monospace;
+  // a:link {  color: black; text-decoration: none; }
+  // a:active {  color: black; text-decoration: underline; }
+  // a:visited { color: black; text-decoration: none; }
+  // a:hover { text-decoration: none; }
+}
+
 .heading {
+  min-height: 250px;
+  border: 1px solid $border;
 }
 
 .padding_left {
@@ -39,52 +48,69 @@ $purple: #B38FAC;
 }
 
 .note {
-  background: #333C46;
   // border: 1px solid $base2;
   flex-grow: 1;
-  min-width: 25%;
+  min-width: 15%;
   // justify-content: center;
   // text-align: center;
   margin: 5px;
   padding: 0 2%;
-  -moz-box-shadow: 4px 4px 24px 4px #4F5B66;
-  -webkit-box-shadow: 4px 4px 24px 4px #4F5B66;
-  box-shadow: 4px 4px 24px 4px #4F5B66;
+  border: 1px solid $border;
+  background: $note;
 }
 
 .note:hover {
-  -moz-box-shadow: 4px 4px 24px 4px #343D46;
-  -webkit-box-shadow: 4px 4px 24px 4px #343D46;
-  box-shadow: 4px 4px 24px 4px #343D46;
+  // flex-grow: 1;
+  // min-width: 25%;
+  // justify-content: center;
+  // text-align: center;
+  // margin: 5px;
+  // padding: 0 2%;
+  // -moz-box-shadow: 4px 4px 24px 4px #343D46;
+  // -webkit-box-shadow: 4px 4px 24px 4px #343D46;
+  // box-shadow: 4px 4px 24px 4px #343D46;
+  // border: 1px solid #65737D;
 }
 
-.weather {
-  color: $base2;
-  font-size: .9em;
-}
 .date {
-  color: $base2;
   font-size: .8em;
+  color: $button2;
 }
+
+.heading {
+  background: $highlight;
+  padding-top: 5%;
+}
+
 
 .header {
-  background: $base1;
-  border: 1px solid $base2;
+  background: $highlight;
+  // border: 1px double white;
+  color: white;
+  // margin-left: 30%;
+  // margin-right: 30%;
 }
 
 .wrapper_titlebar {
+  background: $highlight;
   display: -webkit-flex;
   display: flex;
   flex-grow: 1;
-  padding: 1%;
+  color: white;
 }
 
 .wrapper_title{
-  padding: 0 10px;
+  // padding: 0 10px;
 }
 
-.wrapper_title p {
-  padding: 0 20px;
+// .wrapper_title p {
+//   padding: 0 20px;
+// }
+
+.wrapper_child a:link {
+  display: flex;
+  flex-grow: 1;
+  color: red;
 }
 
 .wrapper_child {
@@ -92,12 +118,12 @@ $purple: #B38FAC;
   flex-grow: 1;
 }
 
+// TODO: Need to space these out more
 .wrapper_note_tools {
   display: -webkit-flex;
   display: flex;
   padding: 10px 5px;
-  background: $base1;
-  border: 1px solid $base2;
+  // border: 1px solid $base2;
 }
 
 .wrapper_edit{
@@ -108,29 +134,18 @@ $purple: #B38FAC;
   padding: 0 10px;
 }
 
-body {
-  color: $base3;
-  font-family: Consolas, Lucida Console, monospace;
-  font: 14px/22px normal helvetica, sans-serif;
-  a:link {color: $blue; text-decoration: none; }
-  a:active {color: $blue; text-decoration: underline; }
-  a:visited {color: $base3; text-decoration: none; }
-  a:hover {color: $green; text-decoration: none; }
-  background: $base0;
-}
 
 h1 {
-  color: $base3;
 }
 .title {
   font-size: 1.2em;
-  color: $blue;
+  font-weight: bold;
+  color: $button1;
   // padding: 1% 2% 0 2%;
 }
 
 
 h2 {
-  color: $base3;
 }
 
 p {
@@ -146,7 +161,6 @@ p {
 }
 
 .quote {
-  background: #333C46;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -196,13 +210,11 @@ button {
   border: none;
   outline: none;
   padding: 1rem 3.5rem;
-  border-radius: 2rem;
-  font-size: 1.5em;
-  // background: #65737D;
-  // color: #343D46;
+  color: white;
+  // border-radius: 2rem;
+  // font-size: 1.5em;
   margin: 2rem 0;
   a {
-    // color: white;
     text-decoration: none;
   }
 }
