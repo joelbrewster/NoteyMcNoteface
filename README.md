@@ -114,6 +114,7 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
+TODO: Add profile page, delete account option
 TODO: login and signup, fix whitespace up top
 TODO: fix up the edited at time to reflect local time
 TODO: fix up log in and sign in href for button and not just text
