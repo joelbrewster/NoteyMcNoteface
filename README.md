@@ -1,8 +1,9 @@
-j NoteyMcNoteface.app
+# NoteyMcNoteface.app
 
 This is a note taking app that has user authentication and memes.
 Write stuff, add a picture, luls.
 
+## Wireframe information
 ### Screen 1 - Main screen
 
 On page load, the user will see user quotes, a login button, heading and links in a footer to things used in this app.
@@ -13,7 +14,7 @@ On page load, the user will see user quotes, a login button, heading and links i
 │└─────────────────────────────────────────────────────────────────────┘│
 ├───────────────────────────────────────────────────────────────────────┤
 │░░░░░░░░░░░░░░░░░░░┌──────────────────────────────┐░░░░░░░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░░░░░│Cool quotes and things go here│░░░░░░░░░░░░░░░░░░░░│
+│░░░░░░░░░░░░░░░░░░░│    User to signup/in here.   │░░░░░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░░░░░└──────────────────────────────┘░░░░░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░░░░░░░░░░░┌────────────────────┐░░░░░░░░░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░░░░░░░░░░░│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│░░░░░░░░░░░░░░░░░░░░░░░░│
@@ -42,44 +43,42 @@ On page load, the user will see user quotes, a login button, heading and links i
 │  └────────────────────────────────────────────────────────────────┘   │
 └───────────────────────────────────────────────────────────────────────┘
 ```
+- I changed this to 2 buttons for login/signup because of the devise page layout.
+
 ### Screen 2 - Login screen
 
-modal login over the main content. Sucessful login takes the user to the note creation/edit/destruction page. Unsuccessful login just wastes time and asks the user to log in again. The user can close the modal to go back to the first page load window.
+Sucessful login takes the user to the note creation/edit/destruction page.
 ```
-┌───────────────────────────────────────────────────────────────────────┐
-│┌░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░┐│
-││░░░░░░░░░░░░░░░░░░░░░░░░░░Notey Mc Noteface░░░░░░░░░░░░░░░░░░░░░░░░░░││
-│└░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░┘│
-├───────────────────────────────────────────────────────────────────────┤
-│░░░░░░░░░░░░░░░░░░░┌░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░┐░░░░░░░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░░░░░│Cool quotes and things go here│░░░░░░░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░░░░░└░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░┘░░░░░░░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░┌────────────────────────────────────────┐░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░│                                        │░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░│                                        │░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░│    ┌───────────────────────────────┐   │░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░│    │test@fakeemail.com             │   │░░░░░░░░░░░░░░│
-│░░░░░░░░░░░░░░░│    └───────────────────────────────┘   │░░░░░░░░░░░░░░│
-│░░░░░░░░░░◑◑◐◱░│                                        │◉◐◑░░░░░░░░░░░│
-│░░┌────────────┤    ┌───────────────────────────────┐   ├──────────┐░░░│
-│░░│░░░░░quotes░│    │password: hunter2              │   │otes░░░░░░│░░░│
-│░░├────────────┤    └───────────────────────────────┘   ├──────────┤░░░│
-│░░│Lorem ipsum░│          ┌─────────────────┐           │psum░dolor│░░░│
-│░░│sit amet,░░░│          │      Login      │           │t,░░░░░░░░│░░░│
-│░░│consetetur░░│          └─────────────────┘           │tur░░░░░░░│░░░│
-│░░│sadipscing░e│                                        │ing░elitr,│░░░│
-│░░│sed░diam non│                                        │m nonumy░░│░░░│
-│░░│eirmod tempo│                                        │tempor░░░░│░░░│
-│░░│invidunt ut └────┬─────┬─────────────────┬────┬──────┘t ut░░░░░░│░░░│
-│░░│labore et dolore │░░░░░│labore░et░dolore░│░░░░│labore et dolore░│░░░│
-│░░└─────────────────┘░░░░░└─────────────────┘░░░░└─────────────────┘░░░│
-│░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
-├────────────────────────┬─────────────────────┬────────────────────────┤
-│░░░░░░░░░░░░░░░░░░░░░░░░│░░░Links to stuff░░░░│░░░░░░░░░░░░░░░░░░░░░░░░│
-│░░┌─────────────────────┴─────────────────────┴────────────────────┐░░░│
-│░░│░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│░░░│
-│░░└────────────────────────────────────────────────────────────────┘░░░│
-└───────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────┐
+│░░░░░░░░░░░░░░░░░░░┌──────────────────────────────┐░░░░░░░░░░░░░░░░░░░│
+│░░░░░░░░░░░░░░░░░░░│           Login              │░░░░░░░░░░░░░░░░░░░│
+│░░░░░░░░░░░░░░░░░░░└──────────────────────────────┘░░░░░░░░░░░░░░░░░░░│
+│               ┌────────────────────────────────────────┐             │
+│               │                                        │             │
+│               │                                        │             │
+│               │    ┌───────────────────────────────┐   │             │
+│               │    │      test@fakeemail.com       │   │             │
+│               │    └───────────────────────────────┘   │             │
+│               │                                        │             │
+│               │    ┌───────────────────────────────┐   │             │
+│               │    │      password: hunter2        │   │             │
+│               │    └───────────────────────────────┘   │             │
+│               │          ┌─────────────────┐           │             │
+│               │          │      Login      │           │             │
+│               │          └─────────────────┘           │             │
+│               │                Signup                  │             │
+│               │           Forgot password?             │             │
+│               │                                        │             │
+│               └────────────────────────────────────────┘             │
+│                                                                      │
+│                                                                      │
+│                                                                      │
+├────────────────────────┬─────────────────────┬───────────────────────┤
+│░░░░░░░░░░░░░░░░░░░░░░░░│░░░Links to stuff░░░░│░░░░░░░░░░░░░░░░░░░░░░░│
+│░░┌─────────────────────┴─────────────────────┴────────────────────┐░░│
+│░░│░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│░░│
+│░░└────────────────────────────────────────────────────────────────┘░░│
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Screen 3 - New/edit note screen
@@ -87,31 +86,31 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
 │┌─────────────────────────────────────────────────────────────────────┐│
-││                          Notey Mc Noteface                          ││
+││   Show Notes                 New Notes               Log Out        ││
 │└─────────────────────────────────────────────────────────────────────┘│
 ├───────────────────────────────────────────────────────────────────────┤
 │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
 │░░┌─────────────────┐░░░░░┌─────────────────┐░░░░░┌─────────────────┐░░│
 │░░│ Meme the planet │░░░░░│  Shia Labeouf   │░░░░░│    dankness     │░░│
-│░░├──░░░░───░░░░─░░░┤░░░░░├─────────────────┤░░░░░├─────────────────┤░░│
-│░░│░░░ ▂  ░░░  ░░░  │░░░░░│Lorem ipsum dolor│░░░░░│Lorem ipsum dolor│░░│
-│░░│   ▒▒▒▒   ░░  ▂▂░│░░░░░│sit amet,        │░░░░░│sit amet,        │░░│
-│░░│▒▒▒▒▒▒▒▒▒▂▂▂ ░░░ │░░░░░│consetetur       │░░░░░│consetetur       │░░│
-│░░│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  │░░░░░│sadipscing elitr,│░░░░░│sadipscing elitr,│░░│
-│░░│▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒│░░░░░│sed diam nonumy  │░░░░░│sed diam nonumy  │░░│
-│░░│▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│░░░░░│eirmod tempor    │░░░░░│eirmod tempor    │░░│
-│░░│no sea takimata  │░░░░░│invidun░░░░░     │░░░░░└─────────────────┘░░│
-│░░│sanctus est Lorem│░░░░░│lab░re ░▒▒▒░░ore │░░░░░░░░░░░░░░░░░░░░░░░░░░│
-│░░│ipsum dolor sit  │░░░░░│mag░a a░░▒░░am   │░░░░░┌─────────────────┐░░│
-│░░│amet. Lorem i◐sum│░░░░░│era░░░░░░░░░░░   │░░░░░│     quotes      │░░│
-│░░│dolor sit amet,  │░░░░░│vol░░░░▛░░░░░░ero│░░░░░├─────────────────┤░░│
-│░░│consetetur       │░░░░░│eo░░░░▁░░░░░░m░et│░░░░░│Lorem ipsum dolor│░░│
-│░░│sadipscing elitr,│░░░░░│j░░░░▁▁░░░▁▁░░░es│░░░░░│sit amet,        │░░│
-│░░│sed diam nonumy  │░░░░░│e░░░░▁░░░░░▁░░░░░│░░░░░│consetetur       │░░│
-│░░│eirmod tempor    │░░░░░│c░░░░░░░░░░░░ ░░░│░░░░░│sadipscing elitr,│░░│
-│░░│invidunt ut      │░░░░░│g░░▜░░░░░░░░░░▜░░│░░░░░│sed diam nonumy  │░░│
-│░░│labore et dolore │░░░░░│ta░░░░░░░░░░░░░░░│░░░░░│eirmod tempor    │░░│
-│░░└─────────────────┘░░░░░└─────────░░░░░░──┘░░░░░└─────────────────┘░░│
+│░░├─────────────────┤░░░░░├─────────────────┤░░░░░├─────────────────┤░░│
+│░░│Lorem ipsum dolor│░░░░░│Lorem ipsum dolor│░░░░░│Lorem ipsum dolor│░░│
+│░░│sit amet,        │░░░░░│sit amet,        │░░░░░│sit amet,        │░░│
+│░░│consetetur       │░░░░░│consetetur       │░░░░░│consetetur       │░░│
+│░░│sadipscing elitr,│░░░░░│sadipscing elitr,│░░░░░│sadipscing elitr,│░░│
+│░░│sed diam nonumy  │░░░░░│sed diam nonumy  │░░░░░│sed diam nonumy  │░░│
+│░░│eirmod tempor    │░░░░░│eirmod tempor    │░░░░░│eirmod tempor    │░░│
+│░░│no sea takimata  │░░░░░│no sea takimata  │░░░░░└─────────────────┘░░│
+│░░│sanctus est Lorem│░░░░░│sanctus est Lorem│░░░░░░░░░░░░░░░░░░░░░░░░░░│
+│░░│ipsum dolor sit  │░░░░░│ipsum dolor sit  │░░░░░┌─────────────────┐░░│
+│░░│amet. Lorem i◐sum│░░░░░│amet. Lorem i◐sum│░░░░░│     quotes      │░░│
+│░░│dolor sit amet,  │░░░░░│dolor sit amet,  │░░░░░├─────────────────┤░░│
+│░░│consetetur       │░░░░░│consetetur       │░░░░░│Lorem ipsum dolor│░░│
+│░░│sadipscing elitr,│░░░░░│sadipscing elitr,│░░░░░│sit amet,        │░░│
+│░░│sed diam nonumy  │░░░░░│sed diam nonumy  │░░░░░│consetetur       │░░│
+│░░│eirmod tempor    │░░░░░│eirmod tempor    │░░░░░│sadipscing elitr,│░░│
+│░░│invidunt ut      │░░░░░│invidunt ut      │░░░░░│sed diam nonumy  │░░│
+│░░│labore et dolore │░░░░░│labore et dolore │░░░░░│eirmod tempor    │░░│
+│░░└─────────────────┘░░░░░└─────────────────┘░░░░░└─────────────────┘░░│
 │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
 │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
@@ -120,23 +119,22 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
+TODO: login and signup, fix whitespace up top
+TODO: fix up the edited at time to reflect local time
 TODO: fix up log in and sign in href for button and not just text
-
 TODO: add shadow on note mouseover
-TODO: login, fix whitespace up top
-TODO: mouse effects (darken and back to lighten) for all buttons and tools
+TODO: mouse over css effects (darken and back to lighten) for all buttons and tools
 TODO: Notes/new - fix the button to match others but darker
 TODO: Space out the Show/Edit/Delete tools on the note page
-TODO: increase size of blue toolbar items (Notes/ New Notes/ Log out)
-TODO: resize the main blue tool menu to be consistent
+TODO: resize the main blue tool menu to be consistent over all pages
+TODO: Fix the buttons to link on the button and not just the word
+TODO: Get the button on the edit page like the front page but $button2
+TODO: Get signup button looking like front page
+TODO: Add a footer and style it with #555555
 
 
+## Reflection
+- I'd like to come up with a br0c0d3 json full of quotes to pull httparty quotes from it.
+- Devise has made so many different views and pages to style and tweak.
+- There's a lot of visual inconsistencies that I'd like to fix over time but I need more time.
 
-#### Ruberic
-Your app must:
-* Create at least 5 RESTful routes with POST, PUT, GET and DELETE verbs using a ruby routing library (Using Sinatra or Rails).
-* Use an ORM (default: active_record) to create a database table structure and interact with data using ruby
-* Have some form of login for the user
-* Properly manage packages using gems
-* Have semantically clean HTML and CSS
-* Be deployed to the public (default: Heroku)
