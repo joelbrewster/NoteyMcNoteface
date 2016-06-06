@@ -1,7 +1,5 @@
 # NoteyMcNoteface.app
-
-This is a note taking app that has user authentication and memes.
-Write stuff, add a picture, luls.
+Write, edit and delete.
 
 ## Wireframe information
 ### Screen 1 - Main screen
@@ -132,6 +130,6 @@ TODO: Add a footer and style it with #555555
 
 ## Reflection
 - I'd like to come up with a br0c0d3 json full of quotes to pull httparty quotes from it.
-- Devise has made so many different views and pages to style and tweak.
+- Devise has made so many different views and pages to style and tweak so I'd like to try to use something like bootstrap or materialize.
 - There's a lot of visual inconsistencies that I'd like to fix over time but I need more time.
 
