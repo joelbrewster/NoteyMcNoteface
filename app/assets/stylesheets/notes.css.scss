@@ -28,6 +28,10 @@ body {
   // a:hover { text-decoration: none; }
 }
 
+#white {
+  color: white;
+  background: $highlight;
+}
 // Link the top $highlight color together
 .heading {
   min-height: 100px;
@@ -118,7 +122,6 @@ body {
 }
 
 //Quotes
-
 .quote_align {
   padding-top: 5%;
   display:flex;
@@ -188,7 +191,6 @@ button {
 .btn {
 
   cursor: pointer;
-  //TODO: Get the button on the edit page like the front page but $button2
   background: $button2;
   color: white;
   border: $border;
@@ -222,6 +224,13 @@ input[type="text"], input[type="email"], input[type="password"] {
 
 textarea {
   min-height: 200px;
+}
+
+.form-inputs {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+input email optional user_email {
 }
 
 .wrapper_tool {
