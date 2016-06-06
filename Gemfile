@@ -1,11 +1,22 @@
 source 'https://rubygems.org'
 
+# fotn awesome
 gem 'font-awesome-sass', '~> 4.6.2'
+
+# Hide env codes for weather api
 gem 'dotenv-rails', :groups => [:development, :test]
+
 # Weather
 # gem 'forecast_io'
-# Does this even look good?
-# gem 'materialize-sass'
+
+gem 'haml', '~> 4.0', '>= 4.0.7'
+
+# Simplify forms
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+
+# hunter2
+gem 'devise', '~> 4.1', '>= 4.1.1'
+
 gem 'rails', '4.2.6'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -36,6 +47,3 @@ group :development do
   gem 'spring'
 end
 
-gem 'haml', '~> 4.0', '>= 4.0.7'
-gem 'simple_form', '~> 3.2', '>= 3.2.1'
-gem 'devise', '~> 4.1', '>= 4.1.1'
