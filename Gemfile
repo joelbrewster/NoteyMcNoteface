@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-# fotn awesome
+# font awesome
 gem 'font-awesome-sass', '~> 4.6.2'
 
-# Hide env codes for weather api
+# Hide codes for weather api
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Weather
