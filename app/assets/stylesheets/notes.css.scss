@@ -14,6 +14,7 @@ $button2: #555555;
   text-align: center;
   background: inherit;
 }
+
 a {
   color: inherit;
   text-decoration: none;
@@ -27,7 +28,7 @@ body {
   color: white;
   background: $highlight;
 }
-// Link the top $highlight color together
+
 .heading {
   min-height: 100px;
   border: 1px solid $border;
@@ -74,13 +75,10 @@ body {
 }
 
 .note {
-  // TODO: Need to add a clear fix things - some notes spill over the side
   background: $note;
   border: 1px solid $border;
   flex-grow: 1;
   min-width: 15%;
-  // justify-content: center;
-  // text-align: center;
   margin: 5px;
   padding: 2% 8%;
 }
@@ -144,6 +142,7 @@ body {
     margin: 10px;
   }
 }
+
 .quote_darken {
   color: $button2;
   font-style: italic;
@@ -163,10 +162,8 @@ body {
 }
 
 //Buttons
-
 button {
   background: $button1;
-  // TODO go to $button2 on hover
   border: $border;
   outline: none;
   padding: 1rem 3.5rem;
@@ -221,6 +218,7 @@ button {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .btn:hover{
   color: $button1;
   -webkit-transform: scale(1.1);
@@ -228,7 +226,6 @@ button {
 }
 
 button:hover{
-  // background: $button2;
   color: white;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -242,9 +239,6 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
   border-radius: .4rem;
 }
 
-// TODO: Fix width on signup text boxes
-
-
 input[type="text"], input[type="email"], input[type="password"] {
   height: 40px;
 }
@@ -257,6 +251,7 @@ textarea {
   padding-left: 15%;
   padding-right: 15%;
 }
+
 input email optional user_email {
 }
 
