@@ -114,23 +114,24 @@ Here the logged in user can create,edit, delete and add stuff to the 'notes'. Th
 
 
 ## Things to do
-- TODO: Add profile page, delete account option
-- TODO: login and signup, fix whitespace up top
-- TODO: fix up the edited at time to reflect local time
-- TODO: fix up log in and sign in href for button and not just text
-- TODO: add shadow on note mouseover
-- TODO: mouse over css effects (darken and back to lighten) for all buttons and tools
-- TODO: Notes/new - fix the button to match others but darker
-- TODO: Space out the Show/Edit/Delete tools on the note page
-- TODO: resize the main blue tool menu to be consistent over all pages
-- TODO: Fix the buttons to link on the button and not just the word
-- TODO: Get the button on the edit page like the front page but $button2
-- TODO: Get signup button looking like front page
-- TODO: Add a footer and style it with #555555
+- TODO: Add profile page, delete account option stuff.
+- TODO: Login and signup, fix whitespace up top.
+- TODO: Fix up the edited at time to reflect local time.
+- TODO: Mouse over css effects (darken and back to lighten) for all buttons and tools, shadows, etc.
+- TODO: Notes/new - fix the button to match others but darker.
+- TODO: Space out the Show/Edit/Delete tools on the note page.
+- TODO: Resize the main blue tool menu to be consistent over all pages.
+- TODO: Fix the buttons to link on the button and not just the word.
+- TODO: Get the button on the edit page like the front page but $button2.
+- TODO: Get signup button looking like front page.
+- TODO: Add a footer and style it with #555555.
+- TODO: Redo a similar app.
 
 
 ## Reflection
-- I'd like to come up with a br0c0d3 json full of quotes to pull httparty quotes from it.
-- Devise has made so many different views and pages to style and tweak so I'd like to try to use something like bootstrap or materialize.
-- There's a lot of visual inconsistencies that I'd like to fix over time but I need more time.
+- I'd like to come up with a br0c0d3 json full of quotes to use with httparty and pull quotes from it.
+- Devise has made so many different views and pages to style and tweak so I'd like to try to use something like bootstrap or materialize to streamline things.
+- I wish I didn't work on getting getting weather conditions to be part of the notes save area. It took too long and didn't really fit the flow of the app. It just looked tacked on.
+- Because I used an API key, I used ENV to store it, so I wasted a lot of time on working on things that didn't make it to the finished product.
+- There's a lot of visual inconsistencies that I'd like to fix over time but I need more time,  mainly grouping areas with borders and buttons.
 
