@@ -7,7 +7,8 @@ gem 'font-awesome-sass', '~> 4.6.2'
 gem 'dotenv-rails', :groups => [:development, :test]
 
 # Weather
-# gem 'forecast_io'
+gem 'forecast_io'
+gem 'materialize-sass'
 
 gem 'haml', '~> 4.0', '>= 4.0.7'
 
