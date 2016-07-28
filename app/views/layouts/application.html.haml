@@ -22,6 +22,12 @@
             = link_to destroy_user_session_path, :method => :delete do
               %i.fa.fa-sign-out.fa-1x
                 Log Out
+          -# .wrapper_child
+          -#   = link_to edit_user_registration_path do
+          -#     %i.fa.fa-sign-out.fa-1x
+          -#       Settings
+
   = yield
   %p.notice= notice
   %p.alert= alert
+

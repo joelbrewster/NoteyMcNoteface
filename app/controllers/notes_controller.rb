@@ -16,6 +16,7 @@ class NotesController < ApplicationController
 
     # @forecast = ForecastIO.forecast(latitude, longitude).currently.icon
     # @forecast = ForecastIO.forecast(-37.8175,144.9671).hourly.icon
+
     quotes = HTTParty.get('http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=10')
     @quote = quotes
   end
