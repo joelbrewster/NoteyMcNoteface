@@ -1,5 +1,10 @@
-# NoteyMcNoteface.app
+# Plain Text Notes
 Write, edit and delete.
+
+```
+Online: https://plaintextnotes.herokuapp.com/
+Demo user: demo@user.com Password: hunter2
+```
 
 ## Wireframe information
 ### Screen 1 - Main screen
@@ -8,7 +13,7 @@ On page load, the user will see user quotes, a login button, heading and links i
 ```
 ┌───────────────────────────────────────────────────────────────────────┐
 │┌─────────────────────────────────────────────────────────────────────┐│
-││                          Notey Mc Noteface                          ││
+││                          Plain Text Notes                           ││
 │└─────────────────────────────────────────────────────────────────────┘│
 ├───────────────────────────────────────────────────────────────────────┤
 │░░░░░░░░░░░░░░░░░░░┌──────────────────────────────┐░░░░░░░░░░░░░░░░░░░░│
